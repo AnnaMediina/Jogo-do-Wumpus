@@ -180,19 +180,22 @@ for i, j in buracos:
 
 # mostra o tabuleiro inicial
 # for linha in tabuleiro:
-    # print(["".join(sorted(casa)) if casa else '-' for casa in linha])
+#     print(["".join(sorted(casa)) if casa else '-' for casa in linha])
 
 
 # inicia o jogo
 print("-"*80)
 print("Bem-vindo ao jogo do Wumpus!")
-print("-"*80)
-print("Você está na casa (0, 0).")
-mostra_percepcao(0,0)
 
 # chama a função menu para explicar os comandos disponíveis
 print("-"*80)
 menu()
+
+# posiciona o jogador na casa inicial e mostra a percepção inicial
+print("-"*80)
+print("Você está na casa (0, 0).")
+mostra_percepcao(0,0)
+print("-"*80)
 
 op = input("Digite o comando: ").strip().lower()
 while True:
